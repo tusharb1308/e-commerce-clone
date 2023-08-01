@@ -1,0 +1,14 @@
+<div class="sideCategoryBar">
+    <ul class="allCategories">
+        <li class="viewAllProducts">
+            <a routerLink="viewAllProduct">View All Products</a>
+        </li>
+        <li class="addNewProduct">
+            <a routerLink="addProduct">Add new product</a>
+        </li>
+        <li *ngFor="let cn of allCategoryNames">
+            <a routerLink="viewAllProductByCategory/{{cn._id}}">{{cn.categoryName}}</a>
+        </li>
+        <!-- <li>Women</li> -->
+    </ul>
+</div>

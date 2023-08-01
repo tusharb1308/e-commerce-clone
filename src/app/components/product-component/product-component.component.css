@@ -1,0 +1,41 @@
+.productsListing{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productDetailCard{
+    border: 1px solid black;
+    margin: 0px 20px 60px 20px;
+    width: 290px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.productImg{
+    width: 100%;
+    height: 300px;
+}
+
+.name{
+    font-size: 30px;
+    color: blue;
+    padding: 5px 6px 5px 10px;
+}
+
+.price{
+    font-size: 24px;
+    padding: 5px 5px 5px 10px;
+    font-weight: bold;
+}
+
+.description{
+    font-size: 22px;
+    padding: 5px 5px 5px 10px;
+}
+
+.rating{
+    font-size: 20px;
+    padding: 5px 5px 5px 10px;
+}

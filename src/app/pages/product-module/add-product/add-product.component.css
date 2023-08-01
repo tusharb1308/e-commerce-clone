@@ -1,0 +1,67 @@
+.pageHeading{
+    font-size: 36px;
+    margin: 10px 10px 10px 10px;
+}
+
+form{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    display: grid;
+    margin: 10px 15px 10px 10px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 550;
+    margin: 0px 0px 5px 0px;
+}
+
+input{
+    width: 500px;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+select{
+    width: 500px;
+    height: 39px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+ng-multiselect-dropdown{
+    width: 510px;
+    height: 39px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.multiselect-dropdown{
+    width: 98%;
+}
+
+.dropdown-btn{
+    padding: 2px 2px 2px 7px;
+}
+
+.dropdown-multiselect--active{
+    padding-right: 22px;
+}
+
+button{
+    height: 35px;
+    width: 150px;
+    font-size: 19px;
+    background: cornflowerblue;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 20px;
+}

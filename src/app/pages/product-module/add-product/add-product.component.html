@@ -1,0 +1,62 @@
+<h3 class="pageHeading">Add new Product</h3>
+<form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+    <p>
+        <label for="productImg">Product Image</label>
+        <input type="url" name="productImg" id="productImg" formControlName="productImg">
+    </p>
+    <p>
+        <label for="productName">Product Name</label>
+        <input type="text" name="productName" id="productName" formControlName="productName">
+    </p>
+    <p>
+        <label for="description">Product Description</label>
+        <input type="text" name="description" id="description" formControlName="description">
+    </p>
+    <p>
+        <label for="category">Categories Fall Under</label>
+        <ng-multiselect-dropdown formControlName="categories"
+            [placeholder]="'check all the categories under which this product falls'"
+            [settings]="categoryDropDownSettings"
+            [data]="categoryDropDownList"
+            [(ngModel)]="categoryDropDownSelectedItems"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+        >
+        </ng-multiselect-dropdown>
+    </p>
+    <p>
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating" formControlName="rating">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </p>
+    <p>
+        <label for="color">Color Available</label>
+        <ng-multiselect-dropdown formControlName="color"
+            [placeholder]="'check all the colors wich are available'"
+            [settings]="colorDropDownSettings"
+            [data]="colorDropDownList"
+            [(ngModel)]="colorDropDownSelectedItems"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+        >
+        </ng-multiselect-dropdown>
+    </p>
+    <p>
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" formControlName="price">
+    </p>
+    <p>
+        <button type="submit" *ngIf="updateProductId==undefined">Add Product</button>
+        <!-- <button type="submit" *ngIf="updateProductId!=undefined">Update Product</button> -->
+    </p>
+</form>
+<p>
+    <!-- <button type="submit" *ngIf="updateProductId==undefined">Add Product</button> -->
+    <button type="submit" *ngIf="updateProductId!=undefined" (click)="onUpdate()">Update Product</button>
+</p>

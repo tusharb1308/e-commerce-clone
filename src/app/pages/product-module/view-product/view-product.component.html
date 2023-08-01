@@ -1,0 +1,19 @@
+<div class="viewProductPage">
+    <div class="productDetailCard" *ngIf="clickedProduct">
+        <div *ngFor="let cp of clickedProduct" >
+            <img src="{{cp.productImg}}" alt="" class="productImg">
+            <p class="name">{{cp.productName}}</p>
+            <p class="price">${{cp.price}}</p>
+            <p class="description">{{cp.description}}</p>
+            <p class="rating">{{cp.rating}}-star</p>
+            <p class="reviews">
+                <span *ngFor="let r of cp.review">{{r}}</span>
+            </p>
+            <p class="availability">{{cp.availability}}</p>
+            <div class="links">
+                <a href="updateProduct/{{cp._id}}" class="updateProduct">Update Product</a> |
+                <a href="deleteProduct/{{cp._id}}" class="deleteProduct">Delete Product</a>
+            </div>
+        </div>
+    </div>
+</div>

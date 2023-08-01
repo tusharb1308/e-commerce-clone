@@ -1,0 +1,27 @@
+.navBar{
+    background-color: #212167;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.heading{
+    width: 55%;
+    margin: 20px 20px 20px 20px;
+    padding: 0px 15px 0px 100px;
+    font-size: 30px;
+}
+
+.links{
+    width: 30%;
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    margin: 15px 15px 15px 15px;
+    padding: 10px 15px 0px 20px;
+    font-size: 20px;
+}

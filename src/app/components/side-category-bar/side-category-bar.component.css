@@ -1,0 +1,21 @@
+.sideCategoryBar{
+    /* background-color: beige; */
+    margin: 50px 50px 50px 150px;
+}
+
+.allCategories{
+    list-style: none;
+    padding: 0px;
+    color: #212167;
+}
+
+li{
+    width: 200px;
+    padding: 15px 60px 15px 15px;
+    border: 0.8px solid grey;
+    font-size: 24px;
+}
+
+li a{
+    text-decoration-line: none;
+}
